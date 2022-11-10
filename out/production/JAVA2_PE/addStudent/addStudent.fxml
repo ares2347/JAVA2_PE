@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addStudent.Controller">
+   <children>
+      <Text layoutX="259.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Student">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="backBtn" onAction="#goBack" layoutX="43.0" layoutY="30.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="&lt;&lt; Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="tfAddress" layoutX="230.0" layoutY="340.0" prefHeight="42.0" prefWidth="353.0" promptText="Enter student address..." style="-fx-background-color: #ffffff; -fx-border-color: #000000;" />
+      <Text layoutX="230.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfId" layoutX="230.0" layoutY="154.0" prefHeight="42.0" prefWidth="353.0" promptText="Enter student ID..." style="-fx-background-color: #ffffff; -fx-border-color: #000000;" />
+      <TextField fx:id="tfName" layoutX="230.0" layoutY="247.0" prefHeight="42.0" prefWidth="353.0" promptText="Enter student name..." style="-fx-background-color: #ffffff; -fx-border-color: #000000;" />
+      <Text layoutX="230.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="230.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfPhone" layoutX="230.0" layoutY="427.0" prefHeight="42.0" prefWidth="353.0" promptText="Enter student phone.." style="-fx-background-color: #ffffff; -fx-border-color: #000000;" />
+      <Text layoutX="230.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="saveBtn" onAction="#save" layoutX="487.0" layoutY="500.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #d7ecf7; -fx-background-radius: 8px;" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

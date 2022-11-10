@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.Controller">
+   <children>
+      <Pane layoutX="152.0" layoutY="68.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="188.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT MANAGEMENT APPLICATION">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="348.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENU">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="addBtn" onAction="#navigateAdd" layoutX="285.0" layoutY="235.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="230.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 8px;" text="Add New Student">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="recordsBtn" onAction="#navigateRecords" layoutX="284.0" layoutY="300.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="230.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 8px;" text="Student Records">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="saveBtn" onAction="#saveToTxt" layoutX="284.0" layoutY="364.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="230.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 8px;" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="exitBtn" layoutX="284.0" layoutY="439.0" mnemonicParsing="false" onAction="#exitProgram" prefHeight="41.0" prefWidth="230.0" style="-fx-background-color: #fc0303; -fx-border-radius: 12px;" text="Exit" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>
