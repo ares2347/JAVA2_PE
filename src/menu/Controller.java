@@ -35,15 +35,17 @@ public class Controller {
         rootStage.setScene(new DefaultScene(p));
     }
     public void saveToTxt (){
-        Path path = Paths.get("C:\\Users\\Default\\Downloads\\records.txt");
-        String txt ="";
+        Path path = Paths.get("D:\\records.txt");
+        ArrayList<String> info = new ArrayList<String>();
         for (Student s: studentObservableList) {
-            ArrayList<String> info = new ArrayList<String>();
-            txt = s.getId() + "," + s.getName() +"," +s.getPhone()+"," + s.getAddress()+"\n";
+            String txt = s.getId() + "," + s.getName() +"," +s.getPhone()+"," + s.getAddress()+"\n";
+            info.add(txt);
         }
         try{
-            Files.write(path, Collections.singleton(txt), StandardCharsets.UTF_8);
-        }catch(Exception e){}
+            Files.write(path, info, StandardCharsets.UTF_8);
+        }catch(Exception e){
+            System.out.println(e);
+        }
 
     }
     public void exitProgram(){
